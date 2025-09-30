@@ -92,7 +92,7 @@ def test_all_recipes():
     try:
         # Process all recipes
         enhanced_recipes = pipeline.process_recipe_directory(
-            data_dir="../data"
+            data_dir="./data"
         )
 
         # Generate summary report
