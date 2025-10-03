@@ -56,3 +56,6 @@ memory-bank/
 # Ignore generated recipe data
 data/generated/
 data/enhanced/
+
+# Large datasets
+data-external/*.csv
