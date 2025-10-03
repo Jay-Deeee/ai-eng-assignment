@@ -52,3 +52,7 @@ scratch.py
 claude.md
 memory-bank/
 .claude/
+
+# Ignore generated recipe data
+data/generated/
+data/enhanced/
