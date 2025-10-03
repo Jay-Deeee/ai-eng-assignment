@@ -30,10 +30,18 @@ OPENAI_API_KEY=your-openai-api-key-here
 
 ## Usage
 
-### 1. Scrape Recipes (Optional - data already provided)
+### 1. Prepare Recipe Data from Kaggle CSVs
+
+After downloading the CSV files via Kaggle (`RAW_recipes.csv` and `RAW_interactions.csv`), run the provided script to convert them into JSON recipes ready for the pipeline:
 
 ```bash
-uv run python src/scraper_v2.py
+uv run python scripts/convert_kaggle_to_recipes.py \
+    --input-dir data-external \
+    --recipes-file RAW_recipes.csv \
+    --reviews-file RAW_interactions.csv \
+    --output-dir data/generated \
+    --sample-size 100 \
+    --min-mod-reviews 1
 ```
 
 ### 2. Run Recipe Enhancement Pipeline
