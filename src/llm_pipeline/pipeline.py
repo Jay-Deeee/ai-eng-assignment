@@ -203,8 +203,15 @@ class LLMAnalysisPipeline:
         Returns:
             List of successfully processed EnhancedRecipe objects
         """
-        data_path = Path(data_dir)
-        recipe_files = list(data_path.glob("recipe_*.json"))
+        # data_path = Path(data_dir)
+        # recipe_files = list(data_path.glob("recipe_*.json"))
+
+        dirs_to_scan = [Path(data_dir), Path("data/generated")]
+
+        recipe_files = []
+        for d in dirs_to_scan:
+            if d.exists():
+                recipe_files.extend(d.glob("recipe_*.json"))
 
         logger.info(f"Found {len(recipe_files)} recipe files to process")
 

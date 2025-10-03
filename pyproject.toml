@@ -9,7 +9,9 @@ dependencies = [
     "loguru>=0.7.3",
     "lxml>=6.0.2",
     "openai>=1.109.1",
+    "pandas>=2.3.3",
     "pydantic>=2.11.9",
     "python-dotenv>=1.1.1",
+    "python-slugify>=8.0.4",
     "requests>=2.32.5",
 ]
