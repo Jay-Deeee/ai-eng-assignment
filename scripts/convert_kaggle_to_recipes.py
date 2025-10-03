@@ -4,12 +4,12 @@ Convert a Kaggle recipe + reviews CSV dataset into many JSON files
 matching the existing pipeline's `data/recipe_*.json` format.
 
 Usage:
-  python scripts/convert_kaggle_to_recipes.py \
-    --input-dir external_data/food_com \
-    --recipes-file recipes.csv \
-    --reviews-file reviews.csv \
+  uv run python scripts/convert_kaggle_to_recipes.py \
+    --input-dir data-external \
+    --recipes-file RAW_recipes.csv \
+    --reviews-file RAW_interactions.csv \
     --output-dir data/generated \
-    --sample-size 200 \
+    --sample-size 100 \
     --min-mod-reviews 1
 """
 
@@ -47,31 +47,25 @@ def detect_modification(text: str) -> bool:
 
 
 def normalize_ingredients(raw):
-    # raw may be a list-string, newline-separated, or a single string
     if pd.isna(raw):
         return []
     if isinstance(raw, list):
         return raw
     s = str(raw).strip()
-    # If looks like a python list string
     if (s.startswith("[") and s.endswith("]")) or ("','" in s) or ('", "' in s):
         try:
-            # attempt to eval safely by splitting
             inner = re.sub(r'^\[|\]$', '', s)
             parts = re.split(r"'\s*,\s*'|\"\s*,\s*\"", inner)
             parts = [p.strip().strip('"\'' ) for p in parts if p.strip()]
             return parts
         except Exception:
             pass
-    # newline separated
     if "\n" in s:
         return [line.strip() for line in s.splitlines() if line.strip()]
-    # comma separated fallback
     if "," in s and len(s) < 1000:
         parts = [p.strip() for p in s.split(",") if p.strip()]
         if len(parts) > 1:
             return parts
-    # single-item fallback
     return [s] if s else []
 
 
@@ -81,13 +75,11 @@ def normalize_instructions(raw):
     s = str(raw).strip()
     if "\n" in s:
         return [line.strip() for line in s.splitlines() if line.strip()]
-    # If semicolon or numbered steps
     if re.search(r"\d\.", s):
         parts = re.split(r"\d+\.\s*", s)
         parts = [p.strip() for p in parts if p.strip()]
         return parts
     if ". " in s and len(s) > 200:
-        # try to chunk sentences
         parts = [p.strip() for p in s.split(". ") if p.strip()]
         return parts
     return [s] if s else []
@@ -105,11 +97,9 @@ def main(args):
     print("Reading reviews CSV:", reviews_file)
     reviews_df = pd.read_csv(reviews_file)
 
-    # normalize column names
     recipes_df.columns = [c.strip() for c in recipes_df.columns]
     reviews_df.columns = [c.strip() for c in reviews_df.columns]
 
-    # try common column candidates
     id_col = find_column(recipes_df, ["id", "recipe_id", "recipeId", "recipeID", "recipe_id"])
     title_col = find_column(recipes_df, ["title", "name", "recipe_name", "headline"])
     ingredients_col = find_column(recipes_df, ["ingredients", "ingredients_text", "ingredients_list"])
@@ -127,7 +117,6 @@ def main(args):
         "rating_count": rating_count_col
     })
 
-    # reviews linking
     review_recipe_col = find_column(reviews_df, ["recipe_id", "recipeId", "id", "recipe"])
     review_text_col = find_column(reviews_df, ["review", "review_text", "text", "comments", "content"])
     review_rating_col = find_column(reviews_df, ["rating", "stars", "rating_value"])
@@ -138,7 +127,6 @@ def main(args):
     if not review_recipe_col or not review_text_col:
         raise SystemExit("Could not detect review linking or review text column. Please check your reviews CSV.")
 
-    # create a grouped reviews mapping
     reviews_df = reviews_df[[review_recipe_col, review_text_col] + ([review_rating_col] if review_rating_col else [])]
     reviews_df = reviews_df.rename(columns={review_recipe_col: "recipe_id", review_text_col: "text"})
     if review_rating_col:
@@ -151,7 +139,6 @@ def main(args):
     else:
       grouped = reviews_df.groupby("recipe_id")[["text"]]
 
-    # We'll create a mapping recipe_id -> list of dicts
     reviews_map = {}
     for rid, group in reviews_df.groupby("recipe_id"):
         arr = []
@@ -162,14 +149,12 @@ def main(args):
             arr.append({"text": str(txt), "rating": r, "has_modification": bool(has_mod)})
         reviews_map[str(rid)] = arr
 
-    # Now optionally sample recipes that have at least min_mod_reviews
     rows = recipes_df.to_dict(orient="records")
     print("Total recipes available:", len(rows))
     selected = []
     for r in rows:
         rid = str(r.get(id_col))
         revs = reviews_map.get(rid, [])
-        # count reviews with modifications
         mod_count = sum(1 for rv in revs if rv.get("has_modification"))
         if args.min_mod_reviews <= mod_count:
             selected.append((r, revs))
@@ -180,7 +165,6 @@ def main(args):
         print("No recipes meet the min_mod_reviews threshold; lowering threshold to include any recipe with reviews.")
         selected = [(r, reviews_map.get(str(r.get(id_col)), [])) for r in rows]
 
-    # sample
     sample_size = args.sample_size or len(selected)
     sample_size = min(sample_size, len(selected))
     chosen = random.sample(selected, sample_size) if sample_size < len(selected) else selected[:sample_size]

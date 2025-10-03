@@ -128,6 +128,7 @@ class EnhancedRecipeGenerator:
 
         Returns:
             Complete EnhancedRecipe with attribution
+            None if no actual changes were applied
         """
         logger.info(f"Generating enhanced recipe for: {original_recipe.title}")
 
@@ -135,6 +136,15 @@ class EnhancedRecipeGenerator:
         modification_applied = self.create_modification_applied(
             modification, source_review, change_records
         )
+
+        # Only keep modifications that actually changed something
+        if not modification_applied.changes_made:
+            logger.info(
+                f"Skipping enhancement for {original_recipe.title} "
+                f"because no changes were made"
+            )
+            return None
+
         modifications_applied = [modification_applied]
 
         # Calculate enhancement summary

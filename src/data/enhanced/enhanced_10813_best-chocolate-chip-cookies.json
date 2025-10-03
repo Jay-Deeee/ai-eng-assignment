@@ -12,8 +12,7 @@
     "2 teaspoons hot water",
     "1 teaspoon salt",
     "3 cups all-purpose flour",
-    "2 cups semisweet chocolate chips",
-    "1 cup chopped walnuts"
+    "2 cups semisweet chocolate chips"
   ],
   "instructions": [
     "Gather your ingredients, making sure your butter is softened, and your eggs are room temperature.",
@@ -34,29 +33,35 @@
         "rating": 3
       },
       "modification_type": "quantity_adjustment",
-      "reasoning": "To enhance the flavor of the cookies by increasing the salt content.",
+      "reasoning": "Increasing the amount of salt can enhance the flavor of the cookies.",
       "changes_made": [
         {
           "type": "ingredient",
           "from_text": "0.5 teaspoon salt",
           "to_text": "1 teaspoon salt",
           "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "1 cup chopped walnuts",
+          "to_text": "",
+          "operation": "remove"
         }
       ]
     }
   ],
   "enhancement_summary": {
-    "total_changes": 1,
+    "total_changes": 2,
     "change_types": [
       "quantity_adjustment"
     ],
-    "expected_impact": "To enhance the flavor of the cookies by increasing the salt content."
+    "expected_impact": "Increasing the amount of salt can enhance the flavor of the cookies."
   },
   "description": "This classic chocolate chip cookie recipe makes deliciously buttery cookies with crisp edges, chewy middles, and gooey chocolate chips in every bite.",
   "servings": "48",
   "prep_time": null,
   "cook_time": null,
   "total_time": null,
-  "created_at": "2025-10-01T07:00:39.640742",
+  "created_at": "2025-10-03T20:06:06.150109",
   "pipeline_version": "1.0.0"
 }

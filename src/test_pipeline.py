@@ -6,8 +6,8 @@ This script tests the complete 3-step pipeline with support for both single reci
 testing and full recipe directory validation.
 
 Usage:
-    python test_pipeline.py single    # Test single chocolate chip cookie recipe
-    python test_pipeline.py all       # Test all recipes in data directory
+    python src/test_pipeline.py single    # Test single chocolate chip cookie recipe
+    python src/test_pipeline.py all       # Test all recipes in data directory
 """
 
 import os

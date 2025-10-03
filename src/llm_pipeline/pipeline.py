@@ -216,6 +216,9 @@ class LLMAnalysisPipeline:
         logger.info(f"Found {len(recipe_files)} recipe files to process")
 
         enhanced_recipes = []
+        skipped_recipes = []
+        failed_recipes = []
+
         for recipe_file in recipe_files:
             logger.info(f"\n{'=' * 60}")
             enhanced_recipe = self.process_single_recipe(str(recipe_file))
@@ -224,12 +227,20 @@ class LLMAnalysisPipeline:
                 enhanced_recipes.append(enhanced_recipe)
                 logger.info(f"✓ Successfully processed: {enhanced_recipe.title}")
             else:
-                logger.warning(f"✗ Failed to process: {recipe_file.name}")
+                skipped_recipes.append(recipe_file.name)
+                logger.warning(f"✗ Skipped: {recipe_file.name} (no actual modifications applied)")
 
         logger.info(f"\n{'=' * 60}")
         logger.info(
             f"Pipeline complete: {len(enhanced_recipes)}/{len(recipe_files)} recipes successfully enhanced"
         )
+        if skipped_recipes:
+            logger.info(f"Skipped recipes (no changes): {len(skipped_recipes)}")
+        if failed_recipes:
+            logger.info(f"Failed recipes: {len(failed_recipes)}")
+
+        # Store skipped recipe info for summary report
+        self._skipped_recipes = skipped_recipes  # internal attribute
 
         return enhanced_recipes
 
@@ -245,6 +256,9 @@ class LLMAnalysisPipeline:
         Returns:
             Summary report dictionary
         """
+
+        skipped_count = len(getattr(self, "_skipped_recipes", []))
+
         if not enhanced_recipes:
             return {"status": "no_recipes_processed"}
 
@@ -268,6 +282,7 @@ class LLMAnalysisPipeline:
                 "total_modifications_applied": total_modifications,
                 "total_changes_made": total_changes,
                 "change_type_distribution": change_type_counts,
+                "recipes_skipped_due_to_zero_changes": skipped_count,
             },
             "enhanced_recipes": [
                 {
@@ -279,6 +294,7 @@ class LLMAnalysisPipeline:
                 }
                 for recipe in enhanced_recipes
             ],
+            "skipped_recipes": getattr(self, "_skipped_recipes", []),
         }
 
         return report

@@ -7,11 +7,10 @@
     "1 cup white sugar",
     "1 cup packed brown sugar",
     "2 eggs",
-    "1 additional egg yolk",
     "2 teaspoons vanilla extract",
     "1 teaspoon baking soda",
     "2 teaspoons hot water",
-    "0.5 teaspoon salt",
+    "1 teaspoon salt",
     "3 cups all-purpose flour",
     "2 cups semisweet chocolate chips",
     "1 cup chopped walnuts"
@@ -30,18 +29,18 @@
   "modifications_applied": [
     {
       "source_review": {
-        "text": "I used an ice cream scoop, that made 16 big cookies. I did add an additional egg yolk to help keep the cookie chewy.They turned out fantastic.",
+        "text": "The first batch that I made was a bit bland. But I did love that they weren't flat! They are a nice thick, chewy cookie. The second batch I used 1 tsp. of salt instead of 1/2 tsp. and omitted the nuts. This was better, but still not quite as flavorful at the traditional Tollhouse cookie recipe. I found that if I pressed them down slightly before baking that worked the best.If I were to rate this recipe on look and texture, it would be a 5. But the flavor falls a bit flat for me. I may keep trying to see how I can make it taste better, but maintain the aesthetic.",
         "reviewer": null,
-        "rating": 5
+        "rating": 3
       },
       "modification_type": "quantity_adjustment",
-      "reasoning": "Adding an additional egg yolk helps keep the cookie chewy and moist.",
+      "reasoning": "To enhance the flavor of the cookies by increasing the salt content.",
       "changes_made": [
         {
           "type": "ingredient",
-          "from_text": "",
-          "to_text": "1 additional egg yolk",
-          "operation": "add"
+          "from_text": "0.5 teaspoon salt",
+          "to_text": "1 teaspoon salt",
+          "operation": "replace"
         }
       ]
     }
@@ -51,13 +50,13 @@
     "change_types": [
       "quantity_adjustment"
     ],
-    "expected_impact": "Adding an additional egg yolk helps keep the cookie chewy and moist."
+    "expected_impact": "To enhance the flavor of the cookies by increasing the salt content."
   },
   "description": "This classic chocolate chip cookie recipe makes deliciously buttery cookies with crisp edges, chewy middles, and gooey chocolate chips in every bite.",
   "servings": "48",
   "prep_time": null,
   "cook_time": null,
   "total_time": null,
-  "created_at": "2025-10-01T07:01:47.656396",
+  "created_at": "2025-10-03T20:07:22.145737",
   "pipeline_version": "1.0.0"
 }

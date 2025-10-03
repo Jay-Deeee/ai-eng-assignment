@@ -1,12 +1,15 @@
 {
   "pipeline_summary": {
-    "recipes_processed": 4,
-    "total_modifications_applied": 4,
-    "total_changes_made": 6,
+    "recipes_processed": 76,
+    "total_modifications_applied": 76,
+    "total_changes_made": 98,
     "change_type_distribution": {
-      "quantity_adjustment": 3,
-      "addition": 1
-    }
+      "quantity_adjustment": 27,
+      "ingredient_substitution": 36,
+      "addition": 12,
+      "removal": 1
+    },
+    "recipes_skipped_due_to_zero_changes": 30
   },
   "enhanced_recipes": [
     {
@@ -24,7 +27,7 @@
       "modifications_count": 1,
       "changes_count": 1,
       "change_types": [
-        "addition"
+        "quantity_adjustment"
       ]
     },
     {
@@ -40,10 +43,690 @@
       "recipe_id": "144299_enhanced",
       "title": "Nikujaga (Japanese-Style Meat and Potatoes) (Community Enhanced)",
       "modifications_count": 1,
-      "changes_count": 3,
+      "changes_count": 1,
       "change_types": [
         "quantity_adjustment"
       ]
+    },
+    {
+      "recipe_id": "274210_enhanced",
+      "title": "spinach and feta omelet  low carb (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "24003_enhanced",
+      "title": "almost too easy potato chicken cheese soup (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "96627_enhanced",
+      "title": "zesty stir fried beef with vegetables (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "358428_enhanced",
+      "title": "smoked pulled pork (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "50459_enhanced",
+      "title": "ww 1 point cheese soup (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "235450_enhanced",
+      "title": "southern cheese ring (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "134763_enhanced",
+      "title": "aussie rice salad (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "199731_enhanced",
+      "title": "salmon and chive muffins (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "285307_enhanced",
+      "title": "barefoot contessa s roasted pepper and goat cheese sandwiches (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "219752_enhanced",
+      "title": "oyster and wild rice casserole (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "45778_enhanced",
+      "title": "baked cheese fiesta dip (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "110043_enhanced",
+      "title": "spinach saute with brown butter   garlic (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "339159_enhanced",
+      "title": "moroccan chicken on saffron rice  ww (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "450454_enhanced",
+      "title": "salmon with wine mustard sauce (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "284823_enhanced",
+      "title": "taco won ton s (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "26866_enhanced",
+      "title": "chicken or turkey enchiladas (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "290725_enhanced",
+      "title": "luscious lemon drizzle cake (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "341277_enhanced",
+      "title": "lentil soup with lime juice (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 3,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "41663_enhanced",
+      "title": "easy crock pot green chili (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "67778_enhanced",
+      "title": "beet greens with bacon and onion (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "440614_enhanced",
+      "title": "to die for chicken pot pie that s 100  vegan and 99  fat free (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "215761_enhanced",
+      "title": "creamed corn cornbread (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "330490_enhanced",
+      "title": "bobby flay s buffalo wing sauce (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "34232_enhanced",
+      "title": "sweet and sour pork kebabs (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "31532_enhanced",
+      "title": "sauteed chicken breast with ham   cheese (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 4,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "291089_enhanced",
+      "title": "chai latte cupcakes  from betty crocker (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "65860_enhanced",
+      "title": "crabmeat au gratin (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "85706_enhanced",
+      "title": "won tons (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "246785_enhanced",
+      "title": "stuffed patty pan squash (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "114681_enhanced",
+      "title": "asparagus pie (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "211769_enhanced",
+      "title": "chocolate truffle dessert brownies (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "20397_enhanced",
+      "title": "raisin iron bars (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "190957_enhanced",
+      "title": "delicious  fruitcake (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "15108_enhanced",
+      "title": "godiva pistachio torte (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "184949_enhanced",
+      "title": "bread machine cardamom golden raisin almond bread (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "237167_enhanced",
+      "title": "asparagus salad with sweet pepper confetti (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "169825_enhanced",
+      "title": "creamed peas and potatoes (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "117587_enhanced",
+      "title": "maple and orange glazed chicken (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "27070_enhanced",
+      "title": "scandinavian hash  biksemad (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "123109_enhanced",
+      "title": "my favorite fresh strawberry pie (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "259778_enhanced",
+      "title": "the old cuban (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "4793_enhanced",
+      "title": "butter pecan ice cream (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "84321_enhanced",
+      "title": "crock pot kinda cassoulet (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "278070_enhanced",
+      "title": "vegetables and small shells soup (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "removal"
+      ]
+    },
+    {
+      "recipe_id": "504699_enhanced",
+      "title": "velveeta broccoli cheese soup (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "394995_enhanced",
+      "title": "rice cooker  coconut rice (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 3,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "347344_enhanced",
+      "title": "low cal mug cake (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "302376_enhanced",
+      "title": "benihana hibachi meat (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "222263_enhanced",
+      "title": "oven baked spanish chicken with rice (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "80044_enhanced",
+      "title": "west indian pumpkin soup (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "174151_enhanced",
+      "title": "chicken nugget casserole (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "304703_enhanced",
+      "title": "williamsburg orange cake with williamsburg butter frosting (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "275686_enhanced",
+      "title": "most awesome blt dip (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "25649_enhanced",
+      "title": "lentils and pasta soup mix for ground beef (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "401687_enhanced",
+      "title": "yankee doodle beef (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "287009_enhanced",
+      "title": "cheesy hash browns and kielbasa soup  crock pot (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "111348_enhanced",
+      "title": "easy fudgemallow candy (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "305691_enhanced",
+      "title": "to die for dipping oil (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "280201_enhanced",
+      "title": "weight watchers crock pot potato chowder (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "452812_enhanced",
+      "title": "sausage toast (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "220293_enhanced",
+      "title": "chicken breasts on rice (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "150801_enhanced",
+      "title": "beef macaroni casserole (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "77585_enhanced",
+      "title": "copycat olive garden minestrone soup by todd wilbur (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 5,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "167531_enhanced",
+      "title": "saucy low fat lemonade chicken (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "281182_enhanced",
+      "title": "raspberry cheesecake bars (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "251210_enhanced",
+      "title": "passionfruit muffins (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "382857_enhanced",
+      "title": "chinese roast pork (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "304947_enhanced",
+      "title": "green chili fries (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "164380_enhanced",
+      "title": "greens fit for company (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "251914_enhanced",
+      "title": "mixed mushroom and goat cheese pizza by sam zien (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "298827_enhanced",
+      "title": "zesty mexican soup (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "340645_enhanced",
+      "title": "gluten free pumpkin banana bread (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 1,
+      "change_types": [
+        "ingredient_substitution"
+      ]
     }
+  ],
+  "skipped_recipes": [
+    "recipe_45613_mango-teriyaki-marinade.json",
+    "recipe_284494_spiced-purple-plum-jam.json",
+    "recipe_177121_tomato-olive-caper-tapenade.json",
+    "recipe_21419_cheese-stuffed-chicken-breasts.json",
+    "recipe_363903_peruvian-baked-quinoa-and-cheese.json",
+    "recipe_64586_cream-cheese-stuffed-jalapenos.json",
+    "recipe_183431_flavored-mayonnaise-8-ways.json",
+    "recipe_410597_easy-ritz-buffalo-shrimp.json",
+    "recipe_369982_cricket-adult.json",
+    "recipe_4987_jean-s-buffalo-chicken-lasagna.json",
+    "recipe_356792_mark-bittman-s-pasta-with-cauliflower.json",
+    "recipe_343941_chicken-and-rice-in-the-slow-cooker.json",
+    "recipe_246306_canned-chicken.json",
+    "recipe_397126_asparagus-cabbage-and-chicken-or-chicken-stir-fry.json",
+    "recipe_474049_barbecued-drumsticks-with-orange-couscous.json",
+    "recipe_295634_israeli-couscous-rice-cooker.json",
+    "recipe_66800_35-minute-teriyaki-meatballs.json",
+    "recipe_170433_aji-ecuadorean-hot-sauce.json",
+    "recipe_16331_s-kat-s-easy-pizza-dough.json",
+    "recipe_384551_oatmeal-marble-bars.json",
+    "recipe_117071_beef-kebabs-beef-bell-pepper-and-mushroom-kabobs.json",
+    "recipe_289531_saucy-asian-bok-choy.json",
+    "recipe_74009_sweet-potato-cheesecake-with-pecan-crumb-crust.json",
+    "recipe_371373_old-fashioned-apple-raisin-crunch-a-la-mode.json",
+    "recipe_331629_nana-s-oatmeal-pancakes.json",
+    "recipe_8584_artichoke-and-lamb-shanks-crock-pot-dinner.json",
+    "recipe_228076_passion-bars.json",
+    "recipe_107253_honey-whole-wheat-bread-abm-or-traditional.json",
+    "recipe_116029_tofu-and-broccoli-stir-fry.json",
+    "recipe_148525_nutmeg-log-cookies.json"
   ]
 }

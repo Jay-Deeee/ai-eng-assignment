@@ -9,10 +9,8 @@
     "4 potatoes, cut into bite sized pieces",
     "2 cups dashi soup",
     "0.25 cup soy sauce",
-    "0.5 cup soy sauce",
     "0.25 cup sake",
     "1 tablespoon white sugar",
-    "2 tablespoons white sugar",
     "1 onion, chopped"
   ],
   "instructions": [
@@ -28,41 +26,29 @@
         "rating": 4
       },
       "modification_type": "quantity_adjustment",
-      "reasoning": "The user increased the amount of meat to better suit the serving size and adjusted the soy sauce and sugar for more flavor.",
+      "reasoning": "The user increased the amount of meat used in the recipe to better suit their taste preferences and the number of servings.",
       "changes_made": [
         {
           "type": "ingredient",
           "from_text": "0.25 pound sirloin steak, thinly sliced",
           "to_text": "1 pound sirloin steak, thinly sliced",
           "operation": "replace"
-        },
-        {
-          "type": "ingredient",
-          "from_text": "",
-          "to_text": "0.5 cup soy sauce",
-          "operation": "add"
-        },
-        {
-          "type": "ingredient",
-          "from_text": "",
-          "to_text": "2 tablespoons white sugar",
-          "operation": "add"
         }
       ]
     }
   ],
   "enhancement_summary": {
-    "total_changes": 3,
+    "total_changes": 1,
     "change_types": [
       "quantity_adjustment"
     ],
-    "expected_impact": "The user increased the amount of meat to better suit the serving size and adjusted the soy sauce and sugar for more flavor."
+    "expected_impact": "The user increased the amount of meat used in the recipe to better suit their taste preferences and the number of servings."
   },
   "description": "This main dish recipe features sliced beef sirloin cooked with potatoes, and onion in a sauce made with prepared dashi soup, sake, and soy sauce.",
   "servings": "4",
   "prep_time": null,
   "cook_time": null,
   "total_time": null,
-  "created_at": "2025-10-01T07:01:49.506770",
+  "created_at": "2025-10-03T20:07:23.851640",
   "pipeline_version": "1.0.0"
 }
